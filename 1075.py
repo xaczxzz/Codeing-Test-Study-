@@ -6,3 +6,4 @@ while True:
         break
     M +=1
 print(str(M)[-2:])
+print("Hello")
