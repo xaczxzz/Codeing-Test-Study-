@@ -18,7 +18,7 @@ def solution(diffs, times, limit):
         return total_time <= limit
 
     # 이진 탐색으로 최소 숙련도 찾기
-    left, right = 1, max(diffs)
+    left, right = min(diffs), max(diffs)
     while left < right:
         mid = (left + right) // 2
         if can_solve_with_level(mid):
